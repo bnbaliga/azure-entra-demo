@@ -1,0 +1,85 @@
+@model DashboardViewModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="grid">
+    <section class="card">
+        <h2>Your identity, as seen by the API</h2>
+        <p class="muted">Returned by <code>GET /api/me</code> after validating your access token.</p>
+
+        @if (Model.ProfileError is not null)
+        {
+            <p class="error">@Model.ProfileError</p>
+        }
+        else if (Model.Me is { } me)
+        {
+            <dl class="details">
+                <dt>Name</dt>
+                <dd>@(me.Name ?? "—")</dd>
+                <dt>Username</dt>
+                <dd>@(me.Username ?? "—")</dd>
+                <dt>Object ID</dt>
+                <dd><code>@me.ObjectId</code></dd>
+                <dt>Tenant ID</dt>
+                <dd><code>@me.TenantId</code></dd>
+                <dt>Scopes</dt>
+                <dd>@string.Join(", ", me.Scopes)</dd>
+            </dl>
+            <details>
+                <summary>All token claims</summary>
+                <table class="claims">
+                    <tbody>
+                        @foreach (var claim in me.Claims)
+                        {
+                            <tr><th>@claim.Type</th><td>@claim.Value</td></tr>
+                        }
+                    </tbody>
+                </table>
+            </details>
+        }
+    </section>
+
+    <section class="card">
+        <h2>My todos</h2>
+        <p class="muted">Stored by the API per user (keyed on your token's <code>oid</code> claim).</p>
+
+        <form class="todo-form" asp-action="Add" method="post">
+            <input name="title" placeholder="What needs doing?" aria-label="New todo" required maxlength="200" />
+            <button class="button" type="submit">Add</button>
+        </form>
+
+        @if (Model.TodosError is not null)
+        {
+            <p class="error">@Model.TodosError</p>
+        }
+
+        @if (Model.Todos.Count == 0)
+        {
+            @if (Model.TodosError is null)
+            {
+                <p class="muted">Nothing yet.</p>
+            }
+        }
+        else
+        {
+            <ul class="todos">
+                @foreach (var todo in Model.Todos)
+                {
+                    <li class="@(todo.Done ? "done" : null)">
+                        <form asp-action="SetDone" asp-route-id="@todo.Id" method="post">
+                            <input type="hidden" name="done" value="@(!todo.Done ? "true" : "false")" />
+                            <label>
+                                <input type="checkbox" checked="@todo.Done" onchange="this.form.requestSubmit()" aria-label="Mark done" />
+                                <span>@todo.Title</span>
+                            </label>
+                        </form>
+                        <form asp-action="Delete" asp-route-id="@todo.Id" method="post">
+                            <button class="link danger" type="submit">Delete</button>
+                        </form>
+                    </li>
+                }
+            </ul>
+        }
+    </section>
+</div>
