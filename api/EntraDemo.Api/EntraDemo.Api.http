@@ -1,0 +1,24 @@
+@host = http://localhost:5016
+# Paste an access token acquired by the React app (see README "Getting a token manually").
+@token = eyJ...
+
+### Public - no token needed
+GET {{host}}/api/health
+
+### Protected - returns 401 without a valid bearer token
+GET {{host}}/api/me
+
+### Protected - with token
+GET {{host}}/api/me
+Authorization: Bearer {{token}}
+
+### List my todos
+GET {{host}}/api/todos
+Authorization: Bearer {{token}}
+
+### Create a todo
+POST {{host}}/api/todos
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{ "title": "Try the Entra-protected API" }
