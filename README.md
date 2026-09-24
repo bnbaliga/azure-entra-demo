@@ -117,6 +117,22 @@ User **self-registration** needs a tenant that allows it. You have two options:
 | Self-service sign-up | ✅ via a "Sign up and sign in" user flow | ❌ ("Create account" won't work) |
 | Authority | `https://<subdomain>.ciamlogin.com/` | `https://login.microsoftonline.com/<tenant-id>` |
 
+### Option: any Microsoft account (no External ID tenant)
+
+If you register one app in a workforce tenant with **Supported account types = "Accounts in any
+organizational directory and personal Microsoft accounts"** (`"signInAudience":
+"AzureADandPersonalMicrosoftAccount"` and `"requestedAccessTokenVersion": 2` in the manifest), then
+anyone with a work/school or personal Microsoft account (Outlook, Hotmail, Xbox) can sign in.
+New users can create a Microsoft account from the sign-in page. Use `common` instead of a tenant ID:
+
+- SPA: `VITE_ENTRA_AUTHORITY=https://login.microsoftonline.com/common`
+- API and MVC: `"TenantId": "common"`
+
+A single registration can act as the SPA, the MVC app *and* the API: add the SPA redirect URI, the
+Web redirect URIs and a client secret to it, and expose the scope on it. This repo's committed
+config uses that setup. If you use a tenant ID here instead, personal accounts that
+aren't in your directory get `AADSTS50020`.
+
 The steps below are for External ID; differences for a workforce tenant are noted. Skip step 3
 or 4 if you only want one of the front ends.
 
@@ -277,6 +293,7 @@ Studio / Rider). To get a real token, sign in to the SPA, open DevTools → Netw
 | --- | --- |
 | `AADSTS50011` redirect URI mismatch | SPA: `http://localhost:5173/redirect.html` must be under the **SPA** platform. MVC: `https://localhost:7180/signin-oidc` must be under the **Web** platform. |
 | `AADSTS7000215` invalid client secret (MVC) | The secret is wrong or expired, or you copied the secret *ID* instead of its *Value*. |
+| `AADSTS50020` user does not exist in tenant | A personal/external account is signing in to a single-tenant setup. Either invite the user as a guest, or use the "any Microsoft account" option above (`common`). |
 | "Create account" errors / shows sign-in page only | Tenant is a workforce tenant, or the app isn't added to a sign-up user flow. |
 | `AADSTS65001` consent required | Grant admin consent for `access_as_user` on the front end's registration. |
 | API returns `401 invalid_token` | `AzureAd:Instance` / `TenantId` / `ClientId` don't match the tenant and API app that issued the token. Check the API console log for the exact `IDX` error. |
