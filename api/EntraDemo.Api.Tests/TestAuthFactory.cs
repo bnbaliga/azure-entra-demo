@@ -27,6 +27,7 @@ public class TestAuthFactory : WebApplicationFactory<Program>
     {
         builder.UseSetting("AzureAd:TenantId", TenantId);
         builder.UseSetting("AzureAd:ClientId", ClientId);
+        builder.UseSetting("AzureAd:Scopes", "access_as_user");
 
         builder.ConfigureServices(services =>
             services.PostConfigure<JwtBearerOptions>(JwtBearerDefaults.AuthenticationScheme, options =>
