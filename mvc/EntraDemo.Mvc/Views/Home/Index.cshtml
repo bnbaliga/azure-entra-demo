@@ -1,0 +1,43 @@
+@model LandingViewModel
+
+@if (Model.MissingSettings.Count > 0)
+{
+    <section class="card setup">
+        <h1>Configuration needed</h1>
+        <p>
+            Fill in the Entra settings in <code>mvc/EntraDemo.Mvc/appsettings.json</code> (put the
+            client secret in user secrets) and restart the app. See the README for step-by-step setup.
+        </p>
+        <p>Missing or placeholder values:</p>
+        <ul>
+            @foreach (var name in Model.MissingSettings)
+            {
+                <li><code>@name</code></li>
+            }
+        </ul>
+    </section>
+}
+
+<section class="hero">
+    <h1>Sign in with Microsoft Entra ID</h1>
+    <p class="muted">
+        Sign in with an existing account, or create one. This server-rendered app then calls a .NET
+        API that only accepts requests carrying a valid Entra access token.
+    </p>
+    <div class="actions">
+        <a class="button large" asp-controller="Account" asp-action="SignIn">Sign in</a>
+        <a class="button secondary large" asp-controller="Account" asp-action="SignUp">Create account</a>
+    </div>
+
+    <div class="card probe">
+        <h2>Is the API really protected?</h2>
+        <p class="muted">Have this app call it without a token and see what happens.</p>
+        <form asp-action="ProbeApi" method="post">
+            <button class="button secondary" type="submit">Call API anonymously</button>
+        </form>
+        @if (Model.ProbeResult is not null)
+        {
+            <pre class="output">@Model.ProbeResult</pre>
+        }
+    </div>
+</section>
