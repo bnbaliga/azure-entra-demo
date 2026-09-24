@@ -1,4 +1,3 @@
-using EntraDemo.Api.Endpoints;
 using EntraDemo.Api.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
@@ -40,6 +39,7 @@ builder.Services.AddCors(options =>
         .WithExposedHeaders("WWW-Authenticate")));
 
 builder.Services.AddSingleton<TodoStore>();
+builder.Services.AddControllers();
 
 var app = builder.Build();
 
@@ -47,7 +47,7 @@ app.UseCors();
 app.UseAuthentication();
 app.UseAuthorization();
 
-app.MapApiEndpoints();
+app.MapControllers();
 
 app.Run();
 
