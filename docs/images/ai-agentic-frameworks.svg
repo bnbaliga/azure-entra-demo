@@ -1,0 +1,133 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0b1020"/><stop offset="1" stop-color="#161b33"/></linearGradient>
+<radialGradient id="glow" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#6366f1" stop-opacity=".35"/><stop offset="1" stop-color="#6366f1" stop-opacity="0"/></radialGradient>
+<linearGradient id="title" x1="0" x2="1"><stop offset="0" stop-color="#a5b4fc"/><stop offset=".5" stop-color="#f0abfc"/><stop offset="1" stop-color="#fdba74"/></linearGradient>
+<pattern id="dots" width="28" height="28" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.2" fill="#ffffff" opacity=".06"/></pattern>
+</defs>
+<rect width="1600" height="1000" fill="url(#bg)"/><rect width="1600" height="1000" fill="url(#dots)"/>
+<circle cx="800.0" cy="560" r="420" fill="url(#glow)"/>
+<text x="800" y="92" text-anchor="middle" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="58" font-weight="800" fill="url(#title)">AI Agentic Frameworks</text>
+<text x="800" y="136" text-anchor="middle" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="22" fill="#94a3b8" letter-spacing="1">Building autonomous, tool-using, multi-agent systems</text>
+<g transform="translate(80.0,196)">
+<rect width="330" height="212" rx="20" fill="#111827" fill-opacity=".92" stroke="#22c55e" stroke-opacity=".55" stroke-width="1.5"/>
+<rect width="330" height="6" rx="3" fill="#22c55e"/>
+<circle cx="56" cy="70" r="34" fill="#22c55e" fill-opacity=".14"/>
+<g transform="translate(56,70)"><circle cx="-14" cy="-12" r="6" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="14" cy="-12" r="6" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="0" cy="14" r="6" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M-9 -8 L-3 9 M9 -8 L3 9 M-8 -12 L8 -12" stroke="#22c55e" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="104" y="64" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#f8fafc">LangGraph</text>
+<text x="104" y="92" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#22c55e">LangChain</text>
+<line x1="24" y1="134" x2="306" y2="134" stroke="#334155"/>
+<text x="24" y="172" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" fill="#cbd5e1">Stateful graph workflows</text>
+</g>
+<g transform="translate(450.0,196)">
+<rect width="330" height="212" rx="20" fill="#111827" fill-opacity=".92" stroke="#f97316" stroke-opacity=".55" stroke-width="1.5"/>
+<rect width="330" height="6" rx="3" fill="#f97316"/>
+<circle cx="56" cy="70" r="34" fill="#f97316" fill-opacity=".14"/>
+<g transform="translate(56,70)"><circle cx="-13" cy="-6" r="6" stroke="#f97316" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="13" cy="-6" r="6" stroke="#f97316" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="0" cy="-10" r="7" stroke="#f97316" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M-22 16 Q-13 4 -4 16 M4 16 Q13 4 22 16 M-10 18 Q0 2 10 18" stroke="#f97316" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="104" y="64" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#f8fafc">CrewAI</text>
+<text x="104" y="92" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#f97316">CrewAI</text>
+<line x1="24" y1="134" x2="306" y2="134" stroke="#334155"/>
+<text x="24" y="172" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" fill="#cbd5e1">Role-based agent crews</text>
+</g>
+<g transform="translate(820.0,196)">
+<rect width="330" height="212" rx="20" fill="#111827" fill-opacity=".92" stroke="#3b82f6" stroke-opacity=".55" stroke-width="1.5"/>
+<rect width="330" height="6" rx="3" fill="#3b82f6"/>
+<circle cx="56" cy="70" r="34" fill="#3b82f6" fill-opacity=".14"/>
+<g transform="translate(56,70)"><rect x="-20" y="-18" width="26" height="18" rx="5" stroke="#3b82f6" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><rect x="-4" y="-2" width="26" height="18" rx="5" stroke="#3b82f6" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="104" y="64" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#f8fafc">AutoGen</text>
+<text x="104" y="92" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#3b82f6">Microsoft</text>
+<line x1="24" y1="134" x2="306" y2="134" stroke="#334155"/>
+<text x="24" y="172" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" fill="#cbd5e1">Multi-agent conversations</text>
+</g>
+<g transform="translate(1190.0,196)">
+<rect width="330" height="212" rx="20" fill="#111827" fill-opacity=".92" stroke="#8b5cf6" stroke-opacity=".55" stroke-width="1.5"/>
+<rect width="330" height="6" rx="3" fill="#8b5cf6"/>
+<circle cx="56" cy="70" r="34" fill="#8b5cf6" fill-opacity=".14"/>
+<g transform="translate(56,70)"><polygon points="0,-20 17,-10 17,10 0,20 -17,10 -17,-10" stroke="#8b5cf6" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle r="6" stroke="#8b5cf6" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="104" y="64" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#f8fafc">Semantic Kernel</text>
+<text x="104" y="92" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#8b5cf6">Microsoft</text>
+<line x1="24" y1="134" x2="306" y2="134" stroke="#334155"/>
+<text x="24" y="172" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" fill="#cbd5e1">Enterprise plugins &amp; planners</text>
+</g>
+<g transform="translate(80.0,442)">
+<rect width="330" height="212" rx="20" fill="#111827" fill-opacity=".92" stroke="#d97757" stroke-opacity=".55" stroke-width="1.5"/>
+<rect width="330" height="6" rx="3" fill="#d97757"/>
+<circle cx="56" cy="70" r="34" fill="#d97757" fill-opacity=".14"/>
+<g transform="translate(56,70)"><path d="M-16 0 A16 16 0 1 1 0 16" stroke="#d97757" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M-6 16 L0 16 L0 10" stroke="#d97757" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle r="4" fill="#d97757"/></g>
+<text x="104" y="64" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#f8fafc">Claude Agent SDK</text>
+<text x="104" y="92" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#d97757">Anthropic</text>
+<line x1="24" y1="134" x2="306" y2="134" stroke="#334155"/>
+<text x="24" y="172" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" fill="#cbd5e1">Tool-using agent loops</text>
+</g>
+<g transform="translate(450.0,442)">
+<rect width="330" height="212" rx="20" fill="#111827" fill-opacity=".92" stroke="#10b981" stroke-opacity=".55" stroke-width="1.5"/>
+<rect width="330" height="6" rx="3" fill="#10b981"/>
+<circle cx="56" cy="70" r="34" fill="#10b981" fill-opacity=".14"/>
+<g transform="translate(56,70)"><path d="M-20 -6 L10 -6 M2 -14 L10 -6 L2 2" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M20 8 L-10 8 M-2 0 L-10 8 L-2 16" stroke="#10b981" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="104" y="64" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#f8fafc">OpenAI Agents SDK</text>
+<text x="104" y="92" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#10b981">OpenAI</text>
+<line x1="24" y1="134" x2="306" y2="134" stroke="#334155"/>
+<text x="24" y="172" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" fill="#cbd5e1">Handoffs &amp; guardrails</text>
+</g>
+<g transform="translate(820.0,442)">
+<rect width="330" height="212" rx="20" fill="#111827" fill-opacity=".92" stroke="#ec4899" stroke-opacity=".55" stroke-width="1.5"/>
+<rect width="330" height="6" rx="3" fill="#ec4899"/>
+<circle cx="56" cy="70" r="34" fill="#ec4899" fill-opacity=".14"/>
+<g transform="translate(56,70)"><ellipse cx="0" cy="-12" rx="16" ry="6" stroke="#ec4899" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M-16 -12 V12 A16 6 0 0 0 16 12 V-12 M-16 0 A16 6 0 0 0 16 0" stroke="#ec4899" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="104" y="64" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#f8fafc">LlamaIndex</text>
+<text x="104" y="92" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#ec4899">LlamaIndex</text>
+<line x1="24" y1="134" x2="306" y2="134" stroke="#334155"/>
+<text x="24" y="172" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" fill="#cbd5e1">Data &amp; RAG agents</text>
+</g>
+<g transform="translate(1190.0,442)">
+<rect width="330" height="212" rx="20" fill="#111827" fill-opacity=".92" stroke="#eab308" stroke-opacity=".55" stroke-width="1.5"/>
+<rect width="330" height="6" rx="3" fill="#eab308"/>
+<circle cx="56" cy="70" r="34" fill="#eab308" fill-opacity=".14"/>
+<g transform="translate(56,70)"><rect x="-20" y="-10" width="40" height="28" rx="4" stroke="#eab308" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M-8 -10 V-18 H8 V-10 M-20 2 H20" stroke="#eab308" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="104" y="64" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#f8fafc">Google ADK</text>
+<text x="104" y="92" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#eab308">Google</text>
+<line x1="24" y1="134" x2="306" y2="134" stroke="#334155"/>
+<text x="24" y="172" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" fill="#cbd5e1">Agent Development Kit</text>
+</g>
+<g transform="translate(80.0,688)">
+<rect width="330" height="212" rx="20" fill="#111827" fill-opacity=".92" stroke="#0ea5e9" stroke-opacity=".55" stroke-width="1.5"/>
+<rect width="330" height="6" rx="3" fill="#0ea5e9"/>
+<circle cx="56" cy="70" r="34" fill="#0ea5e9" fill-opacity=".14"/>
+<g transform="translate(56,70)"><path d="M-14 12 A10 10 0 0 1 -12 -6 A13 13 0 0 1 12 -8 A10 10 0 0 1 14 12 Z" stroke="#0ea5e9" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="104" y="64" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#f8fafc">Azure AI Foundry</text>
+<text x="104" y="92" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#0ea5e9">Microsoft</text>
+<line x1="24" y1="134" x2="306" y2="134" stroke="#334155"/>
+<text x="24" y="172" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" fill="#cbd5e1">Managed Agent Service</text>
+</g>
+<g transform="translate(450.0,688)">
+<rect width="330" height="212" rx="20" fill="#111827" fill-opacity=".92" stroke="#14b8a6" stroke-opacity=".55" stroke-width="1.5"/>
+<rect width="330" height="6" rx="3" fill="#14b8a6"/>
+<circle cx="56" cy="70" r="34" fill="#14b8a6" fill-opacity=".14"/>
+<g transform="translate(56,70)"><circle cx="-16" cy="0" r="5" stroke="#14b8a6" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="0" cy="0" r="5" stroke="#14b8a6" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><circle cx="16" cy="0" r="5" stroke="#14b8a6" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M-11 0 H-5 M5 0 H11" stroke="#14b8a6" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M-16 -14 H16 M-16 14 H16" stroke="#14b8a6" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity=".5"/></g>
+<text x="104" y="64" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#f8fafc">Haystack</text>
+<text x="104" y="92" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#14b8a6">deepset</text>
+<line x1="24" y1="134" x2="306" y2="134" stroke="#334155"/>
+<text x="24" y="172" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" fill="#cbd5e1">Composable pipelines</text>
+</g>
+<g transform="translate(820.0,688)">
+<rect width="330" height="212" rx="20" fill="#111827" fill-opacity=".92" stroke="#e11d48" stroke-opacity=".55" stroke-width="1.5"/>
+<rect width="330" height="6" rx="3" fill="#e11d48"/>
+<circle cx="56" cy="70" r="34" fill="#e11d48" fill-opacity=".14"/>
+<g transform="translate(56,70)"><path d="M-18 -16 H18 M0 -16 V18" stroke="#e11d48" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 6 L13 12 L22 0" stroke="#e11d48" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="104" y="64" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#f8fafc">Pydantic AI</text>
+<text x="104" y="92" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#e11d48">Pydantic</text>
+<line x1="24" y1="134" x2="306" y2="134" stroke="#334155"/>
+<text x="24" y="172" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" fill="#cbd5e1">Type-safe agents</text>
+</g>
+<g transform="translate(1190.0,688)">
+<rect width="330" height="212" rx="20" fill="#111827" fill-opacity=".92" stroke="#facc15" stroke-opacity=".55" stroke-width="1.5"/>
+<rect width="330" height="6" rx="3" fill="#facc15"/>
+<circle cx="56" cy="70" r="34" fill="#facc15" fill-opacity=".14"/>
+<g transform="translate(56,70)"><path d="M-8 -12 L-20 0 L-8 12 M8 -12 L20 0 L8 12 M4 -18 L-4 18" stroke="#facc15" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+<text x="104" y="64" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="22" font-weight="700" fill="#f8fafc">smolagents</text>
+<text x="104" y="92" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#facc15">Hugging Face</text>
+<line x1="24" y1="134" x2="306" y2="134" stroke="#334155"/>
+<text x="24" y="172" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="18" fill="#cbd5e1">Code-writing agents</text>
+</g>
+<text x="800" y="972" text-anchor="middle" font-family="Inter,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#64748b">Plan · Reason · Use Tools · Remember · Collaborate</text>
+</svg>
